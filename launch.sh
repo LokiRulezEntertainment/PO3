@@ -15,7 +15,6 @@ exit 99
 fi
 
 if ! [[ -f "RLCraft Server Pack 1.12.2 - Release v2.9.3.zip" ]]; then
-  curl -Lo 'RLCraft Server Pack 1.12.2 - Release v2.9.3.zip' 'https://edge.forgecdn.net/files/4612/990/RLCraft Server Pack 1.12.2 - Release v2.9.3.zip' && unzip -u -o 'RLCraft Server Pack 1.12.2 - Release v2.9.3.zip' -d /data
   curl -Lo forge-${FORGE_VERSION}-installer.jar 'https://maven.minecraftforge.net/net/minecraftforge/forge/'${FORGE_VERSION}'/forge-'${FORGE_VERSION}'-installer.jar'
   java -jar forge-${FORGE_VERSION}-installer.jar --installServer && rm -f forge-${FORGE_VERSION}-installer.jar
 
